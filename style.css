@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f6f9fc 0%, #eef2f7 100%);
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+        }
+
+        .heading {
+            text-align: center;
+            color: #1a365d;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin: 20px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .container {
+            width: 95vw;
+            max-width: 1400px;
+            height: 75vh;
+            margin: 20px auto 0 auto;
+            display: flex;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            position: relative;
+        }
+
+        .cards {
+            width: 50%;
+            height: 100%;
+            border: none;
+            font-size: 15px;
+            line-height: 1.6;
+            padding: 24px;
+            box-sizing: border-box;
+            background: #ffffff;
+            box-shadow: none;
+            resize: none;
+            outline: none;
+            font-family: 'Monaco', 'Consolas', monospace;
+        }
+
+        #code.cards {
+            border-right: 1px solid #eaecef;
+            background: #fafbfc;
+            color: #2a2f35;
+        }
+
+        #output.cards {
+            background: #ffffff;
+        }
+
+        button {
+            padding: 12px 32px;
+            margin: 0 auto;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            background: #2563eb;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+            transition: all 0.2s ease-in-out;
+            display: block;
+            font-family: 'Inter', sans-serif;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        textarea.cards::placeholder {
+            color: #5e6471;
+            font-style: normal;
+            opacity: 0.8;
+        }
+
+        /* Custom bambooo */
+        .cards::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        .cards::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .cards::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 4px;
+        }
+
+        .cards::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
