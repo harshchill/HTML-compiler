@@ -8,12 +8,37 @@
 </head>
 
 <body>
-    <h1 class="heading">HTML Live Editor</h1>
-    <div class="container">
-        <textarea class="cards" id="code" placeholder="Enter your HTML, CSS, and JavaScript code here..."></textarea>
-        <iframe class="cards" id="output"></iframe>
+    <header class="header">
+        <div class="logo">HTML Live Editor</div>
+    </header>
+
+    <div class="main-content">
+        <nav class="sidebar">
+            <div class="nav-section">
+                <h3>Navigation</h3>
+                <a href="index.html" class="active"><i class="icon">🏠</i>Editor</a>
+                <a href="about.html"><i class="icon">ℹ️</i>About</a>
+            </div>
+            
+        </nav>
+
+        <div class="content-area">
+            <div class="container">
+                <textarea class="cards" id="code" placeholder="Enter your HTML, CSS, and JavaScript code here..."></textarea>
+                <iframe class="cards" id="output"></iframe>
+            </div>
+            <button onclick="runCode()">Run Code</button>
+        </div>
     </div>
-    <button onclick="runCode()">Run Code</button>
+
+    <footer class="footer">
+        <p>&copy; 2025 HTML Live Editor. All rights reserved.</p>
+        <div class="footer-links">
+            <a >Privacy Policy</a>
+            <a >Terms of Service</a>
+            <a >Contact</a>
+        </div>
+    </footer>
 
     <script>
         function runCode() {
